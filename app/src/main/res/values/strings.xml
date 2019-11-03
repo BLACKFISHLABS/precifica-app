@@ -1,4 +1,30 @@
 <resources>
     <string name="app_name">Precifica App!</string>
-    <string name="action_settings">Settings</string>
+
+    <string name="blackfishlabs">BLACKFISH LABS</string>
+    <string name="blackfishlabs_github_io">blackfishlabs.github.io</string>
+    <string name="description_about">APLICATIVOS E SOFTWARE SOB MEDIDA PARA NEGÓCIOS DIGITAIS</string>
+
+    <string name="title_dashboard">Calcular</string>
+    <string name="title_about_developer">Desenvolvedor</string>
+
+    <string name="how_much">Quanto custa criar um aplicativo?</string>
+    <string name="description_dash">Calcule rapidamente o custo da criação do seu Aplicativo respondendo algumas perguntas simples.</string>
+
+    <!-- Step -->
+    <string name="add_button_back_text">Anterior</string>
+    <string name="add_button_next_text">Próximo</string>
+    <string name="add_button_complete_text">Finalizar</string>
+
+    <string name="app_calculate">Cálculo de Custo</string>
+    <string name="select_one_answer">Selecione ao menos uma opção!</string>
+
+    <string name="question_one">Qual o nível de qualidade você está procurando?</string>
+    <string name="question_two">Qual tipo de aplicativo você precisa?</string>
+    <string name="question_three">Qual aparência você deseja que o seu aplicativo tenha?</string>
+    <string name="question_four">Qual retorno financeiro você deseja ter?</string>
+    <string name="question_five">O seu aplicativo precisa de um sistema de login?</string>
+    <string name="question_six">Seu aplicativo deve ser integrado à um website?</string>
+    <string name="question_eight">Seu aplicativo necessita de um painel administrativo?</string>
+    <string name="question_nine">Quantas línguas você deseja que seu aplicativo tenha?</string>
 </resources>

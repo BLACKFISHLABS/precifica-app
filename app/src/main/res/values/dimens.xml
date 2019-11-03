@@ -1,3 +1,14 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Material design keylines -->
+    <dimen name="keyline_xlarge">32dp</dimen>
+    <dimen name="keyline_large">16dp</dimen>
+    <dimen name="keyline_medium">8dp</dimen>
+    <dimen name="keyline_small">4dp</dimen>
+
+    <dimen name="logo">256dp</dimen>
+    <dimen name="mini_logo">128dp</dimen>
+    <dimen name="icon">128dp</dimen>
+    <dimen name="margin_footer">50dp</dimen>
 </resources>
