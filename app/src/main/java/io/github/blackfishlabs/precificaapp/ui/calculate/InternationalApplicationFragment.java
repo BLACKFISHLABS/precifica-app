@@ -27,6 +27,8 @@ import io.github.blackfishlabs.precificaapp.domain.Question;
 import io.github.blackfishlabs.precificaapp.ui.calculate.event.AddedQuestionEvent;
 import io.github.blackfishlabs.precificaapp.ui.common.BaseFragment;
 
+import static java.util.Objects.requireNonNull;
+
 public class InternationalApplicationFragment extends BaseFragment implements Step {
 
     @BindView(R.id.option_9_1)
@@ -49,7 +51,7 @@ public class InternationalApplicationFragment extends BaseFragment implements St
 
     private Map<String, Question> selectedItems = Maps.newHashMap();
     private Question selectedItem;
-    private static final String QUESTION_ID = "9";
+    private static final String QUESTION_ID = "8";
 
     public static InternationalApplicationFragment newInstance() {
         return new InternationalApplicationFragment();
@@ -137,7 +139,7 @@ public class InternationalApplicationFragment extends BaseFragment implements St
 
     @Override
     public void onError(@NonNull VerificationError error) {
-        Snackbar.make(getView(), error.getErrorMessage(), Snackbar.LENGTH_SHORT).show();
+        Snackbar.make(requireNonNull(getView()), error.getErrorMessage(), Snackbar.LENGTH_SHORT).show();
     }
 
     @Override

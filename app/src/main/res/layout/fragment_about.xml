@@ -9,7 +9,7 @@
     <LinearLayout
         style="@style/ContainerLayout"
         android:gravity="top"
-        android:layout_margin="@dimen/keyline_xlarge">
+        android:layout_margin="@dimen/keyline_large">
 
         <TextView
             android:id="@+id/bfLabs"
@@ -17,7 +17,12 @@
             android:layout_height="wrap_content"
             android:text="@string/blackfishlabs"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="32sp" />
+            android:textSize="52sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGray"/>
 
         <TextView
             android:id="@+id/description"

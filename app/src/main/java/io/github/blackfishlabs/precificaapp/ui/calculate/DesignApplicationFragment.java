@@ -27,6 +27,8 @@ import io.github.blackfishlabs.precificaapp.domain.Question;
 import io.github.blackfishlabs.precificaapp.ui.calculate.event.AddedQuestionEvent;
 import io.github.blackfishlabs.precificaapp.ui.common.BaseFragment;
 
+import static java.util.Objects.requireNonNull;
+
 public class DesignApplicationFragment extends BaseFragment implements Step {
 
     @BindView(R.id.option_3_1)
@@ -149,7 +151,7 @@ public class DesignApplicationFragment extends BaseFragment implements Step {
 
     @Override
     public void onError(@NonNull VerificationError error) {
-        Snackbar.make(getView(), error.getErrorMessage(), Snackbar.LENGTH_SHORT).show();
+        Snackbar.make(requireNonNull(getView()), error.getErrorMessage(), Snackbar.LENGTH_SHORT).show();
     }
 
     @Override

@@ -101,7 +101,7 @@ public class FinishStepFragment extends BaseFragment implements Step {
         return valorString;
     }
 
-    public void details() {
+    private void details() {
         String items = "";
         myData = ""
                 .concat(currentOrder.getId())
@@ -170,15 +170,15 @@ public class FinishStepFragment extends BaseFragment implements Step {
         alert.setIcon(R.drawable.ic_content_paste);
 
         alert.setMessage("O desenvolvimento de aplicativos para celular em média consome de 100 a 500 horas para ser feito.\n\n" +
-                "Tem o custo aproximado entre R$ 5 mil e R$ 35 mil.\n\n" +
-                "Aplicativos mais complexos podem custar entre R$ 35 mil e R$ 80 mil.\n\n" +
+                "Tem o custo aproximado entre R$ 3 mil e R$ 20 mil.\n\n" +
+                "Aplicativos mais complexos podem custar entre R$ 20 mil e R$ 50 mil.\n\n" +
                 "Um projeto simples demora de 2 a 4 meses e médios/grandes projetos de 4 meses a 12 meses.\n\n" +
                 "Mesmo em um projeto de 100 horas de trabalho, não é possível resolver em um mês, " +
                 "pois as etapas exigem interação de pessoas distintas e isso impacta na sequência contínua do projeto.\n\n" +
                 "Depois de pronto, o aplicativo ainda terá outros custos: manutenção, evolução e hospedagem em um servidor.\n\n" +
-                "O custo para contratar esses serviços inicia em aproximadamente R$ 500,00 mensais.\n\n" +
+                "O custo para contratar esses serviços inicia em aproximadamente R$ 250,00 mensais.\n\n" +
                 "No caso de aplicativos complexos, ou com grande volume de uso e que vão exigir servidores mais potentes, " +
-                "o custo total pode variar entre R$ 1 mil a R$ 10 mil por mês.\n\n" +
+                "o custo total pode variar entre R$ 500,00 a R$ 5 mil por mês.\n\n" +
                 "Se o projeto não der certo, dificilmente encontrará outro fornecedor disponível a continuar o projeto, " +
                 "pois é muito custoso e as vezes inviável trabalhar sobre algo feito da forma errada, ou com tecnologias que não são as escolhidas pelo desenvolvedor.\n\n" +
                 "É fundamental sentir confiança total do fornecedor antes da contratação.\n\n\n" +

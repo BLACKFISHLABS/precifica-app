@@ -25,9 +25,10 @@
                 android:layout_height="wrap_content"
                 android:text="@string/question_eight"
                 android:textColor="@color/colorPrimaryDark"
-                android:gravity="center"
+                android:gravity="left"
                 android:textStyle="bold"
                 android:textSize="22sp" />
+
         </LinearLayout>
 
         <LinearLayout

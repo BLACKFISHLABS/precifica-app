@@ -56,7 +56,7 @@ public class ProjectStatusFragment extends BaseFragment implements Step {
 
     private Map<String, Question> selectedItems = Maps.newHashMap();
     private Question selectedItem;
-    private static final String QUESTION_ID = "10";
+    private static final String QUESTION_ID = "9";
 
     public static ProjectStatusFragment newInstance() {
         return new ProjectStatusFragment();

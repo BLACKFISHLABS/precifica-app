@@ -7,7 +7,7 @@
     <dimen name="keyline_medium">8dp</dimen>
     <dimen name="keyline_small">4dp</dimen>
 
-    <dimen name="logo">256dp</dimen>
+    <dimen name="logo">300dp</dimen>
     <dimen name="mini_logo">128dp</dimen>
     <dimen name="icon">128dp</dimen>
     <dimen name="margin_footer">50dp</dimen>

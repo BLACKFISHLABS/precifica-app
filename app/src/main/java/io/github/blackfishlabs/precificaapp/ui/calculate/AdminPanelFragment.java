@@ -51,7 +51,7 @@ public class AdminPanelFragment extends BaseFragment implements Step {
 
     private Map<String, Question> selectedItems = Maps.newHashMap();
     private Question selectedItem;
-    private static final String QUESTION_ID = "8";
+    private static final String QUESTION_ID = "7";
 
     public static AdminPanelFragment newInstance() {
         return new AdminPanelFragment();

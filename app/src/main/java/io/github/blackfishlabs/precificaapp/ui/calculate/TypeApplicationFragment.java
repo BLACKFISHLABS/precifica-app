@@ -27,6 +27,8 @@ import io.github.blackfishlabs.precificaapp.domain.Question;
 import io.github.blackfishlabs.precificaapp.ui.calculate.event.AddedQuestionEvent;
 import io.github.blackfishlabs.precificaapp.ui.common.BaseFragment;
 
+import static java.util.Objects.requireNonNull;
+
 public class TypeApplicationFragment extends BaseFragment implements Step {
 
     @BindView(R.id.option_2_1)
@@ -66,14 +68,14 @@ public class TypeApplicationFragment extends BaseFragment implements Step {
             changeQuestion(op1, Lists.newArrayList(op2, op3));
             selectedItem = new Question(QUESTION_ID,
                     question2.getText().toString(),
-                    answer1.getText().toString(), 5000.00);
+                    answer1.getText().toString(), 1000.00);
         });
 
         op2.setOnClickListener(v -> {
             changeQuestion(op2, Lists.newArrayList(op1, op3));
             selectedItem = new Question(QUESTION_ID,
                     question2.getText().toString(),
-                    answer2.getText().toString(), 10000.00);
+                    answer2.getText().toString(), 2000.00);
 
         });
 
@@ -81,7 +83,7 @@ public class TypeApplicationFragment extends BaseFragment implements Step {
             changeQuestion(op3, Lists.newArrayList(op1, op2));
             selectedItem = new Question(QUESTION_ID,
                     question2.getText().toString(),
-                    answer3.getText().toString(), 15000.00);
+                    answer3.getText().toString(), 3000.00);
         });
 
         return view;
@@ -138,7 +140,7 @@ public class TypeApplicationFragment extends BaseFragment implements Step {
 
     @Override
     public void onError(@NonNull VerificationError error) {
-        Snackbar.make(getView(), error.getErrorMessage(), Snackbar.LENGTH_SHORT).show();
+        Snackbar.make(requireNonNull(getView()), error.getErrorMessage(), Snackbar.LENGTH_SHORT).show();
     }
 
     @Override

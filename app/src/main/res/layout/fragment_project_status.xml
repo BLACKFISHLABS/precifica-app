@@ -25,7 +25,7 @@
                 android:layout_height="wrap_content"
                 android:text="Em que estágio se encontra o seu projeto?"
                 android:textColor="@color/colorPrimaryDark"
-                android:gravity="center"
+                android:gravity="left"
                 android:textStyle="bold"
                 android:textSize="22sp" />
         </LinearLayout>
