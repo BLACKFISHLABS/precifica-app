@@ -3,13 +3,13 @@ apply plugin: 'io.fabric'
 
 android {
     compileSdkVersion 29
-    buildToolsVersion "29.0.2"
+    buildToolsVersion "29.0.3"
     defaultConfig {
         applicationId "io.github.blackfishlabs.precificaapp"
         minSdkVersion 22
         targetSdkVersion 29
-        versionCode 17
-        versionName "1.7.0"
+        versionCode 18
+        versionName "1.8.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
         multiDexEnabled true
@@ -51,7 +51,7 @@ dependencies {
     // Logging
     implementation 'com.jakewharton.timber:timber:4.5.1'
     // MultiDex Auto
-    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'androidx.multidex:multidex:2.0.0'
     // Dexter runtime permissions
     implementation 'com.karumi:dexter:5.0.0'
     // Guava
@@ -59,7 +59,7 @@ dependencies {
     // Material Stepper
     implementation 'com.stepstone.stepper:material-stepper:3.2.0'
     // Firebase
-    implementation 'com.google.firebase:firebase-core:17.2.1'
+    implementation 'com.google.firebase:firebase-core:17.2.2'
     // Crashlytics
     implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
     // Awesome Font

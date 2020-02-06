@@ -82,7 +82,6 @@ public class MainActivity extends BaseActivity implements Drawer.OnDrawerItemCli
         ProfileDrawerItem profile = new ProfileDrawerItem()
                 .withName(nameToShow.toUpperCase())
                 .withEmail(emailToShow)
-                .withTypeface(AndroidUtils.getFont(this))
                 .withIcon(builder.buildRound(nameWithTwoLetters, Color.DKGRAY));
         profiles.add(profile);
 
@@ -94,7 +93,6 @@ public class MainActivity extends BaseActivity implements Drawer.OnDrawerItemCli
                 .withSelectionListEnabledForSingleProfile(false)
                 .withProfiles(profiles)
                 .withCompactStyle(true)
-                .withTypeface(AndroidUtils.getFont(this))
                 .build();
     }
 
@@ -103,7 +101,6 @@ public class MainActivity extends BaseActivity implements Drawer.OnDrawerItemCli
                 .beginConfig()
                 .fontSize(AndroidUtils.dpToPx(this, 26))
                 .toUpperCase()
-                .useFont(AndroidUtils.getFont(this))
                 .endConfig();
     }
 
@@ -141,7 +138,6 @@ public class MainActivity extends BaseActivity implements Drawer.OnDrawerItemCli
         if (dashboardDrawerItem == null) {
             dashboardDrawerItem = new PrimaryDrawerItem()
                     .withIdentifier(DRAWER_ITEM_DASHBOARD)
-                    .withTypeface(AndroidUtils.getFont(this))
                     .withName(R.string.title_dashboard)
                     .withIcon(VectorDrawableCompat
                             .create(getResources(), R.drawable.ic_dashboard, getTheme()));
@@ -153,7 +149,6 @@ public class MainActivity extends BaseActivity implements Drawer.OnDrawerItemCli
         if (aboutDrawerItem == null) {
             aboutDrawerItem = new PrimaryDrawerItem()
                     .withIdentifier(DRAWER_ITEM_ABOUT)
-                    .withTypeface(AndroidUtils.getFont(this))
                     .withName(R.string.title_about_developer)
                     .withIcon(VectorDrawableCompat.create(getResources(), R.drawable.ic_developer_mode, getTheme()));
         }
@@ -165,7 +160,6 @@ public class MainActivity extends BaseActivity implements Drawer.OnDrawerItemCli
         if (infoDrawerItem == null) {
             infoDrawerItem = new SecondaryDrawerItem()
                     .withIdentifier(DRAWER_ITEM_ABOUT)
-                    .withTypeface(AndroidUtils.getFont(this))
                     .withIcon(VectorDrawableCompat
                             .create(getResources(), R.drawable.ic_bookmark_border, getTheme()))
                     .withName("Versão do Aplicativo")

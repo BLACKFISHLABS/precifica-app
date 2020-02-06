@@ -1,14 +1,9 @@
 package io.github.blackfishlabs.precificaapp.helper;
 
 import android.content.Context;
-import android.graphics.Typeface;
 import android.os.Environment;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
-
-import androidx.core.content.res.ResourcesCompat;
-
-import io.github.blackfishlabs.precificaapp.R;
 
 public class AndroidUtils {
 
@@ -47,9 +42,9 @@ public class AndroidUtils {
         return builder.toString();
     }
 
-    public static Typeface getFont(final Context context) {
-        return ResourcesCompat.getFont(context, R.font.montserrat);
-    }
+//    public static Typeface getFont(final Context context) {
+//        return ResourcesCompat.getFont(context, R.font.montserrat);
+//    }
 
 
 }

@@ -17,10 +17,12 @@
             android:text="O custo estimado do seu aplicativo é de:"
             android:textColor="@color/colorPrimary"
             android:textSize="32sp" />
+
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:background="@color/colorGray"/>
+            android:background="@color/colorGray" />
+
         <TextView
             android:id="@+id/value"
             android:layout_width="wrap_content"
@@ -62,7 +64,8 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:background="@color/colorGray"/>
+            android:background="@color/colorGray" />
+
         <Button
             android:id="@+id/btn_more"
             android:layout_width="fill_parent"

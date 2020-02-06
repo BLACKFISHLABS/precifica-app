@@ -33,8 +33,6 @@ import io.github.blackfishlabs.precificaapp.helper.AndroidUtils;
 import io.github.blackfishlabs.precificaapp.ui.calculate.event.AddedQuestionEvent;
 import io.github.blackfishlabs.precificaapp.ui.common.BaseFragment;
 
-import static java.util.Objects.requireNonNull;
-
 public class FinishStepFragment extends BaseFragment implements Step {
 
     @BindView(R.id.btn_share)
@@ -159,7 +157,6 @@ public class FinishStepFragment extends BaseFragment implements Step {
         alertDialog.show();
 
         TextView textView = alertDialog.findViewById(android.R.id.message);
-        requireNonNull(textView).setTypeface(AndroidUtils.getFont(getContext()));
     }
 
     @OnClick(R.id.btn_more)
@@ -193,7 +190,6 @@ public class FinishStepFragment extends BaseFragment implements Step {
         alertDialog.show();
 
         TextView textView = alertDialog.findViewById(android.R.id.message);
-        requireNonNull(textView).setTypeface(AndroidUtils.getFont(getContext()));
     }
 
     @Override
