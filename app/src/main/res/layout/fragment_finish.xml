@@ -14,13 +14,14 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/keyline_large"
             android:gravity="center"
+            android:fontFamily="sans-serif-thin"
             android:text="O custo estimado do seu aplicativo é de:"
             android:textColor="@color/colorPrimary"
             android:textSize="32sp" />
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="2dp"
+            android:layout_height="1dp"
             android:background="@color/colorGray" />
 
         <TextView
@@ -60,11 +61,6 @@
             android:text="Este aplicativo tem a finalidade de realizar um custo estimado sobre horas gastas, baseado no questionário aplicado.\n"
             android:textColor="@color/colorPrimary"
             android:textSize="12sp" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="@color/colorGray" />
 
         <Button
             android:id="@+id/btn_more"

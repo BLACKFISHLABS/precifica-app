@@ -42,9 +42,4 @@ public class AndroidUtils {
         return builder.toString();
     }
 
-//    public static Typeface getFont(final Context context) {
-//        return ResourcesCompat.getFont(context, R.font.montserrat);
-//    }
-
-
 }

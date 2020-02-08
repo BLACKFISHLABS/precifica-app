@@ -23,9 +23,10 @@
                 android:layout_margin="@dimen/keyline_small"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
                 android:text="@string/question_one"
                 android:textColor="@color/colorPrimaryDark"
-                android:gravity="left"
+                android:gravity="center_horizontal"
                 android:textStyle="bold"
                 android:textSize="22sp" />
         </LinearLayout>

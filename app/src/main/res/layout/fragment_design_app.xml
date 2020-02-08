@@ -25,7 +25,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/question_three"
                 android:textColor="@color/colorPrimaryDark"
-                android:gravity="left"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
                 android:textStyle="bold"
                 android:textSize="22sp" />
         </LinearLayout>

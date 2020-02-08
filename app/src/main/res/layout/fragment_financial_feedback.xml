@@ -25,6 +25,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/question_four"
                 android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif-light"
                 android:gravity="left"
                 android:textStyle="bold"
                 android:textSize="22sp" />
