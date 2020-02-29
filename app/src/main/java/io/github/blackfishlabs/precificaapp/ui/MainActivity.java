@@ -38,12 +38,14 @@ import static java.util.Objects.requireNonNull;
 public class MainActivity extends BaseActivity implements Drawer.OnDrawerItemClickListener {
 
     private static final int DRAWER_ITEM_DASHBOARD = 1;
-    private static final int DRAWER_ITEM_ABOUT = 10;
+    private static final int DRAWER_ITEM_ABOUT = 2;
+    private static final int DRAWER_ITEM_ADS = 3;
 
     private AccountHeader accountHeader;
 
     private PrimaryDrawerItem dashboardDrawerItem;
     private PrimaryDrawerItem aboutDrawerItem;
+    private PrimaryDrawerItem adsDrawerItem;
 
     private SecondaryDrawerItem infoDrawerItem;
 
@@ -73,7 +75,7 @@ public class MainActivity extends BaseActivity implements Drawer.OnDrawerItemCli
 
     private void initDrawerHeader(final Bundle inState) {
         String nameToShow = "Precifica App!";
-        String emailToShow = "balckfishlabs.github.io";
+        String emailToShow = getString(R.string.blackfishlabs_website);
 
         List<IProfile> profiles = Lists.newArrayList();
         TextDrawable.IShapeBuilder builder = createShapeBuilder();
@@ -115,8 +117,10 @@ public class MainActivity extends BaseActivity implements Drawer.OnDrawerItemCli
     }
 
     private void initDrawer(final Bundle inState) {
-        List<IDrawerItem> menuPrimaryToShow = Lists.newArrayList(createDashboardDrawerItem(),
+        List<IDrawerItem> menuPrimaryToShow = Lists.newArrayList(
+                createDashboardDrawerItem(),
                 createAboutDrawerItem(),
+                createAdsDrawerItem(),
                 new DividerDrawerItem(),
                 createInfoDrawerItem());
 
@@ -139,6 +143,7 @@ public class MainActivity extends BaseActivity implements Drawer.OnDrawerItemCli
             dashboardDrawerItem = new PrimaryDrawerItem()
                     .withIdentifier(DRAWER_ITEM_DASHBOARD)
                     .withName(R.string.title_dashboard)
+                    .withDescription("Aplicativos Mobile")
                     .withIcon(VectorDrawableCompat
                             .create(getResources(), R.drawable.ic_dashboard, getTheme()));
         }
@@ -150,10 +155,24 @@ public class MainActivity extends BaseActivity implements Drawer.OnDrawerItemCli
             aboutDrawerItem = new PrimaryDrawerItem()
                     .withIdentifier(DRAWER_ITEM_ABOUT)
                     .withName(R.string.title_about_developer)
+                    .withDescription("Sobre")
                     .withIcon(VectorDrawableCompat.create(getResources(), R.drawable.ic_developer_mode, getTheme()));
         }
 
         return aboutDrawerItem;
+    }
+
+    private PrimaryDrawerItem createAdsDrawerItem() {
+        if (adsDrawerItem == null) {
+            adsDrawerItem = new PrimaryDrawerItem()
+                    .withIdentifier(DRAWER_ITEM_ADS)
+                    .withName(getString(R.string.title_ads))
+                    .withDescription("Maquininhas de Cartões")
+                    .withIcon(VectorDrawableCompat
+                            .create(getResources(), R.drawable.ic_credit_card, getTheme()));
+        }
+
+        return adsDrawerItem;
     }
 
     private SecondaryDrawerItem createInfoDrawerItem() {
@@ -185,6 +204,13 @@ public class MainActivity extends BaseActivity implements Drawer.OnDrawerItemCli
                 break;
             }
 
+            case DRAWER_ITEM_ADS: {
+                if (!isViewingAds()) {
+                    navigate().toAds();
+                }
+                break;
+            }
+
             case DRAWER_ITEM_ABOUT: {
                 if (!isViewingAbout()) {
                     navigate().toAbout();
@@ -202,6 +228,10 @@ public class MainActivity extends BaseActivity implements Drawer.OnDrawerItemCli
 
     private boolean isViewingAbout() {
         return isViewingFragmentByTag(AboutFragment.TAG);
+    }
+
+    private boolean isViewingAds() {
+        return isViewingFragmentByTag(AdsFragment.TAG);
     }
 
     private boolean isViewingFragmentByTag(String tag) {

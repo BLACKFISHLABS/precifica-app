@@ -39,7 +39,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
-            android:text="@string/blackfishlabs_github_io"
+            android:text="@string/blackfishlabs_website"
             android:textColor="@color/colorPrimaryDark" />
 
     </LinearLayout>

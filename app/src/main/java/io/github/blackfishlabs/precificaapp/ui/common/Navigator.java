@@ -7,6 +7,7 @@ import androidx.core.app.ActivityCompat;
 
 import io.github.blackfishlabs.precificaapp.R;
 import io.github.blackfishlabs.precificaapp.ui.AboutFragment;
+import io.github.blackfishlabs.precificaapp.ui.AdsFragment;
 import io.github.blackfishlabs.precificaapp.ui.DashboardFragment;
 import io.github.blackfishlabs.precificaapp.ui.calculate.CalculateActivity;
 
@@ -38,6 +39,15 @@ public class Navigator {
 
     public void toCalculatePrice() {
         ActivityCompat.startActivity(mActivity, new Intent(mActivity, CalculateActivity.class), null);
+    }
+
+    public void toAds() {
+        mActivity.getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.frame_layout_all_fragment_container,
+                        AdsFragment.newInstance(), AdsFragment.TAG)
+                .commit();
+        mActivity.setTitle(R.string.title_ads);
     }
 
     public void toWebSite(String site) {

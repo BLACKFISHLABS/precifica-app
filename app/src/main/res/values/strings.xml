@@ -2,7 +2,7 @@
     <string name="app_name">Precifica App!</string>
 
     <string name="blackfishlabs">BLACKFISH LABS</string>
-    <string name="blackfishlabs_github_io">blackfishlabs.github.io</string>
+    <string name="blackfishlabs_website">blackfishlabs.com.br</string>
     <string name="description_about">APLICATIVOS E SOFTWARE SOB MEDIDA PARA NEGÓCIOS DIGITAIS</string>
 
     <string name="title_dashboard">Calcular</string>
@@ -27,4 +27,10 @@
     <string name="question_six">Seu aplicativo deve ser integrado à um website?</string>
     <string name="question_eight">Seu aplicativo necessita de um painel administrativo?</string>
     <string name="question_nine">Quantas línguas você deseja que seu aplicativo tenha?</string>
+
+    <string name="afiliate_help">
+        Se você precisa aceitar cartões no seu negócio a melhor opção são as maquininhas de cartões do Mercado Pago!
+        \n\nClique na imagem para ser direcionado a compra do item.\n
+    </string>
+    <string name="title_ads">Mercado Pago</string>
 </resources>
