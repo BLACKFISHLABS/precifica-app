@@ -60,7 +60,7 @@ dependencies {
     // Material Stepper
     implementation 'com.stepstone.stepper:material-stepper:3.2.0'
     // Firebase
-    implementation 'com.google.firebase:firebase-core:17.2.2'
+    implementation 'com.google.firebase:firebase-core:17.3.0'
     // Crashlytics
     implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
     // Awesome Font
