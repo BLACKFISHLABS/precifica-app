@@ -37,6 +37,8 @@ public class FinishStepFragment extends BaseFragment implements Step {
 
     @BindView(R.id.btn_share)
     Button btnShare;
+    @BindView(R.id.btn_share_bf)
+    Button btnShareBF;
     @BindView(R.id.btn_open)
     Button btnOpen;
     @BindView(R.id.btn_more)
@@ -128,7 +130,7 @@ public class FinishStepFragment extends BaseFragment implements Step {
     @OnClick(R.id.btn_share)
     void btnShare() {
         details();
-        Intent share = new Intent(android.content.Intent.ACTION_SEND);
+        Intent share = new Intent(Intent.ACTION_SEND);
         share.setType("text/plain");
 
         share.putExtra(Intent.EXTRA_SUBJECT, "Custo Estimado");
@@ -137,6 +139,11 @@ public class FinishStepFragment extends BaseFragment implements Step {
         startActivity(Intent.createChooser(share, "Compartilhar Meu Custo Estimado!"));
     }
 
+    @OnClick(R.id.btn_share_bf)
+    void btnShareBF() {
+        details();
+        navigate().toWebSite("https://wa.me/5565996168022?text=" + myData);
+    }
 
     @OnClick(R.id.btn_open)
     void btnOpen() {

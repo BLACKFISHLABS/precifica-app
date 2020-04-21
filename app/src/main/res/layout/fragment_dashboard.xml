@@ -35,7 +35,6 @@
             android:layout_height="wrap_content"
             android:text="@string/description_dash"
             android:gravity="center_horizontal"
-            android:fontFamily="sans-serif-light"
             android:textColor="@color/colorPrimaryDark" />
 
     </LinearLayout>

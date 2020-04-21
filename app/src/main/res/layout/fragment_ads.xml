@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/ms_white"
@@ -9,16 +9,15 @@
 
     <LinearLayout
         style="@style/ContainerLayout"
-        android:gravity="top"
-        android:layout_margin="16dp">
+        android:layout_margin="8dp"
+        android:gravity="top">
 
         <TextView
             android:id="@+id/bfWeSite"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:textAlignment="center"
             android:text="@string/afiliate_help"
+            android:textAlignment="center"
             android:textColor="@color/colorPrimary" />
 
         <ImageView
@@ -28,7 +27,6 @@
             android:layout_gravity="center"
             android:importantForAccessibility="no"
             app:srcCompat="@drawable/mercadopago" />
-
     </LinearLayout>
 
 </FrameLayout>

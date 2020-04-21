@@ -105,8 +105,6 @@
                         android:textColor="@color/colorPrimary" />
 
                 </LinearLayout>
-
-
             </LinearLayout>
 
             <LinearLayout
@@ -143,15 +141,9 @@
                         android:lines="2"
                         android:text="Ainda não sei"
                         android:textColor="@color/colorPrimary" />
-
                 </LinearLayout>
-
-
             </LinearLayout>
-
         </LinearLayout>
-
-
     </LinearLayout>
 
 </LinearLayout>
