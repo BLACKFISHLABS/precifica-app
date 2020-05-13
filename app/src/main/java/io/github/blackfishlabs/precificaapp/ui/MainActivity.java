@@ -40,12 +40,16 @@ public class MainActivity extends BaseActivity implements Drawer.OnDrawerItemCli
     private static final int DRAWER_ITEM_DASHBOARD = 1;
     private static final int DRAWER_ITEM_ABOUT = 2;
     private static final int DRAWER_ITEM_ADS = 3;
+    private static final int DRAWER_ITEM_CALC_HOUR = 4;
+    private static final int DRAWER_ITEM_CALC_PROJECT = 5;
 
     private AccountHeader accountHeader;
 
     private PrimaryDrawerItem dashboardDrawerItem;
     private PrimaryDrawerItem aboutDrawerItem;
     private PrimaryDrawerItem adsDrawerItem;
+    private PrimaryDrawerItem calcHourDrawerItem;
+    private PrimaryDrawerItem calcProjectDrawerItem;
 
     private SecondaryDrawerItem infoDrawerItem;
 
@@ -119,6 +123,8 @@ public class MainActivity extends BaseActivity implements Drawer.OnDrawerItemCli
     private void initDrawer(final Bundle inState) {
         List<IDrawerItem> menuPrimaryToShow = Lists.newArrayList(
                 createDashboardDrawerItem(),
+                createCalcHourDrawerItem(),
+                createCalcProjectDrawerItem(),
                 createAboutDrawerItem(),
                 createAdsDrawerItem(),
                 new DividerDrawerItem(),
@@ -148,6 +154,30 @@ public class MainActivity extends BaseActivity implements Drawer.OnDrawerItemCli
                             .create(getResources(), R.drawable.ic_dashboard, getTheme()));
         }
         return dashboardDrawerItem;
+    }
+
+    private PrimaryDrawerItem createCalcHourDrawerItem() {
+        if (calcHourDrawerItem == null) {
+            calcHourDrawerItem = new PrimaryDrawerItem()
+                    .withIdentifier(DRAWER_ITEM_CALC_HOUR)
+                    .withName(R.string.title_calc_hour)
+                    .withDescription("Valor da Hora")
+                    .withIcon(VectorDrawableCompat
+                            .create(getResources(), R.drawable.ic_av_timer, getTheme()));
+        }
+        return calcHourDrawerItem;
+    }
+
+    private PrimaryDrawerItem createCalcProjectDrawerItem() {
+        if (calcProjectDrawerItem == null) {
+            calcProjectDrawerItem = new PrimaryDrawerItem()
+                    .withIdentifier(DRAWER_ITEM_CALC_PROJECT)
+                    .withName(R.string.title_calc_project)
+                    .withDescription("Valor do Projeto")
+                    .withIcon(VectorDrawableCompat
+                            .create(getResources(), R.drawable.ic_computer, getTheme()));
+        }
+        return calcProjectDrawerItem;
     }
 
     private PrimaryDrawerItem createAboutDrawerItem() {
@@ -203,14 +233,24 @@ public class MainActivity extends BaseActivity implements Drawer.OnDrawerItemCli
                 }
                 break;
             }
-
+            case DRAWER_ITEM_CALC_HOUR: {
+                if (!isViewingCalcHour()) {
+                    navigate().toCalcHour();
+                }
+                break;
+            }
+            case DRAWER_ITEM_CALC_PROJECT: {
+                if (!isViewingCalcProject()) {
+                    navigate().toCalcProject();
+                }
+                break;
+            }
             case DRAWER_ITEM_ADS: {
                 if (!isViewingAds()) {
                     navigate().toAds();
                 }
                 break;
             }
-
             case DRAWER_ITEM_ABOUT: {
                 if (!isViewingAbout()) {
                     navigate().toAbout();
@@ -224,6 +264,14 @@ public class MainActivity extends BaseActivity implements Drawer.OnDrawerItemCli
 
     private boolean isViewingDashboard() {
         return isViewingFragmentByTag(DashboardFragment.TAG);
+    }
+
+    private boolean isViewingCalcProject() {
+        return isViewingFragmentByTag(CalcProjectFragment.TAG);
+    }
+
+    private boolean isViewingCalcHour() {
+        return isViewingFragmentByTag(CalcHourFragment.TAG);
     }
 
     private boolean isViewingAbout() {

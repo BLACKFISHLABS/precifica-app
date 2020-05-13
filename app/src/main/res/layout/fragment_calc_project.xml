@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWindowBackground">
+
+    <LinearLayout
+        style="@style/ContainerLayout"
+        android:gravity="center">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/keyline_medium"
+            android:stretchColumns="1">
+
+            <TableRow android:layout_marginBottom="@dimen/keyline_xlarge">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:importantForAccessibility="no"
+                    app:srcCompat="@drawable/ic_attach_money" />
+
+                <TextView
+                    android:id="@+id/calculated"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="8sp"
+                    android:layout_marginStart="@dimen/keyline_large"
+                    android:text="@string/title_zero_money"
+                    android:fontFamily="sans-serif-thin"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="56sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:importantForAccessibility="no"
+                    app:srcCompat="@drawable/ic_attach_money" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_money_focus"
+                    style="@style/FormInputLayout"
+                    android:layout_column="1"
+                    android:layout_marginStart="@dimen/keyline_large"
+                    app:hintTextAppearance="@style/HintTextStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_text_money_focus"
+                        style="@style/EditableField"
+                        android:hint="@string/title_salary_hour"
+                        android:inputType="numberDecimal" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:importantForAccessibility="no"
+                    app:srcCompat="@drawable/ic_access_time" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_work_hour"
+                    style="@style/FormInputLayout"
+                    android:layout_column="1"
+                    android:layout_marginStart="@dimen/keyline_large"
+                    app:hintTextAppearance="@style/HintTextStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_text_work_hour"
+                        style="@style/EditableField"
+                        android:hint="@string/title_hour_worked_in_day"
+                        android:inputType="number"
+                        android:minEms="1"
+                        android:maxEms="24" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:importantForAccessibility="no"
+                    app:srcCompat="@drawable/ic_today" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_week_days"
+                    style="@style/FormInputLayout"
+                    android:layout_column="1"
+                    android:layout_marginStart="@dimen/keyline_large"
+                    app:hintTextAppearance="@style/HintTextStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_text_week_days"
+                        style="@style/EditableField"
+                        android:hint="@string/title_worked_days"
+                        android:inputType="number" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

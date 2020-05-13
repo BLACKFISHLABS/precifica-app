@@ -5,7 +5,9 @@
     <string name="blackfishlabs_website">blackfishlabs.com.br</string>
     <string name="description_about">APLICATIVOS E SOFTWARE SOB MEDIDA PARA NEGÓCIOS DIGITAIS</string>
 
-    <string name="title_dashboard">Calcular</string>
+    <string name="title_dashboard">Calcular Aplicativo</string>
+    <string name="title_calc_hour">Calcular Hora</string>
+    <string name="title_calc_project">Calcular Projeto</string>
     <string name="title_about_developer">Desenvolvedor</string>
 
     <string name="how_much">Quanto custa criar um aplicativo?</string>
@@ -33,4 +35,12 @@
         \n\nClique na imagem para ser direcionado.\n
     </string>
     <string name="title_ads">Mercado Pago</string>
+
+    <string name="title_hour_value">Valor da sua Hora</string>
+    <string name="title_zero_money">R$0.00</string>
+    <string name="title_hour_worked_in_day">Horas trabalhadas por dia</string>
+    <string name="title_hour_worked_days">Quantos dias por semana</string>
+    <string name="title_salary">Quanto quer ganhar por mês</string>
+    <string name="title_salary_hour">Quanto você ganha por hora</string>
+    <string name="title_worked_days">Quantos dias irá durar o projeto</string>
 </resources>
