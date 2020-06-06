@@ -8,8 +8,8 @@ android {
         applicationId "io.github.blackfishlabs.precificaapp"
         minSdkVersion 22
         targetSdkVersion 29
-        versionCode 25
-        versionName "2.2.5"
+        versionCode 26
+        versionName "2.2.6"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
         multiDexEnabled true
@@ -60,7 +60,7 @@ dependencies {
     // Material Stepper
     implementation 'com.stepstone.stepper:material-stepper:3.2.0'
     // Firebase
-    implementation 'com.google.firebase:firebase-core:17.4.1'
+    implementation 'com.google.firebase:firebase-core:17.4.3'
     // Crashlytics
     implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
     // Awesome Font

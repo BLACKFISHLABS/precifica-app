@@ -33,7 +33,7 @@
                     android:text="@string/title_zero_money"
                     android:fontFamily="sans-serif-thin"
                     android:textColor="@color/colorPrimaryDark"
-                    android:textSize="56sp" />
+                    android:textSize="46sp" />
             </TableRow>
 
             <TableRow>
