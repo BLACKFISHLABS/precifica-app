@@ -78,7 +78,7 @@ public class MainActivity extends BaseActivity implements Drawer.OnDrawerItemCli
     }
 
     private void initDrawerHeader(final Bundle inState) {
-        String nameToShow = "Precifica App!";
+        String nameToShow = "Precifica App";
         String emailToShow = getString(R.string.blackfishlabs_website);
 
         List<IProfile> profiles = Lists.newArrayList();

@@ -1,4 +1,4 @@
-# Precifica App!  
+# Precifica App
 App Open source para orçar valores de aplicativos
 
 ## Nota

@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name='Precifica App!'
+rootProject.name='Precifica App'
